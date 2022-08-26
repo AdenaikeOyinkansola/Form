@@ -1,0 +1,123 @@
+body{
+    background:linear-gradient( to right,rgb(255, 163, 255) ,rgb(255, 247, 129));
+    color: white;
+    font-family: tahoma;
+    font-size: 16px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+p {
+    margin-bottom: 0;
+    font-size: 1.2em;
+}
+
+form{
+    width: 50%;
+    margin: 50px auto;
+    min-width: 400px;
+    background:rgb(251, 124, 255);
+    opacity: 0.9;
+    border-radius: 16px;
+    padding: 2.5rem;
+}
+label{
+    margin: 0.5% 0;
+    display: block;
+    font-size: 1.2em;
+}
+input,textarea,select{
+    margin: 10px,0,0,0;
+    width: 30%;
+    min-width: 5em;
+}
+input,textarea{
+    background-color: white;
+    border: 1px solid rgb(13, 12, 34);
+    color: rgb(13, 12, 34);
+    width: 100%;
+    padding: 8px 25px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px
+    
+} 
+
+.inline{
+    width:unset;
+    margin: 0,0.5,0,0;
+    vertical-align: middle;
+    font-size: 4px;
+} 
+
+.checkbox{
+    width:unset;
+    margin: 0,0.5,0,0;
+    vertical-align: middle;
+    font-size: 4px;
+} 
+
+input[type= "submit" ] {
+    display: block;
+    width: 100%;
+    margin: 2em auto;
+    height: 2em;
+    font-size: 1.1em;
+    background-color: #0efc71;
+    min-width: 300px;
+    border-radius: 0.1em;
+    border-color: #0efc71;
+}
+input[type= "submit" ]:hover{
+    transform: scale(1.01);
+    background-color: #12af54;
+    color: #fff;
+    transition: all 200ms ease;
+}
+
+ .drop{
+width: 100%;
+border-radius: 8px;
+padding: 5px 15px;
+font-size: 1.2rem;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.opt{
+    width: 100%;
+    border-radius:8px;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+
+/* .textarea{
+    height: 100px;
+    width: 100%;
+} */
+
+*{
+    box-sizing: border-box;
+}
+
+@media screen and (min-width:500px) {
+    form{
+        padding: auto;
+  }
+
+  @media screen and (max-width:779px){
+    form{
+        padding: auto;
+    }
+
+    /* @media screen and (max-width:1238px ) {
+        form{
+            padding: auto;
+        }
+    } */
+}
+}
