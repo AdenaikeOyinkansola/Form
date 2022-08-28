@@ -3,6 +3,9 @@ body{
     color: white;
     font-family: tahoma;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .text-center {
@@ -104,20 +107,24 @@ margin-bottom: 10px;
     box-sizing: border-box;
 }
 
-@media screen and (min-width:500px) {
-    form{
-        padding: auto;
-  }
 
-  @media screen and (max-width:779px){
-    form{
-        padding: auto;
+
+  @media only screen and (max-width:765px){
+    #description{
+        font-size: 16px;
+        padding: .1em .5em;
     }
 
-    /* @media screen and (max-width:1238px ) {
-        form{
-            padding: auto;
-        }
-    } */
-}
-}
+    #survey-form{
+        font-size: 16px;
+        padding: 2em 2em 2em 2em;
+    }
+  }
+
+  @media screen and (min-width:500px) {
+    #survey-form{
+        font-size: 16px;
+        padding: 2em 2em 2em 2em;
+    }
+  }
+    
