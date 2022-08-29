@@ -20,7 +20,7 @@ p {
 #survey-form{
     width: 50%;
     margin: 50px auto;
-    min-width: 400px;
+    min-width: 370px;
     background:rgb(251, 124, 255);
     opacity: 0.9;
     border-radius: 16px;
@@ -114,9 +114,8 @@ margin-bottom: 10px;
     color: rgb(43, 12, 39);
 }
 
-  @media only screen and (max-width: 400px){
+  @media only screen and (width < 420px){
     #survey-form{
-        min-width: none;
-        width: 95%;
+        min-width: 90%;
     }
   }
