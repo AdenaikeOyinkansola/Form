@@ -1,7 +1,7 @@
 body{
     background:linear-gradient( to right,rgb(255, 163, 255) ,rgb(255, 247, 129));
     color: white;
-    font-family: tahoma;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -10,18 +10,28 @@ body{
 
 .text-center {
     text-align: center;
+    color: rgb(43, 12, 39);
 }
 
-p {
+.text-center h1{
+    margin-top: 2em;
     margin-bottom: 0;
-    font-size: 1.2em;
+} 
+.text-center p{
+    margin-top: 1em;
+    max-width: 25ch;
+    margin-inline: auto;
+} 
+p{
+    margin-bottom: 0;
+    font-size: 1.2rem;
 }
 
 #survey-form{
     width: 50%;
     margin: 50px auto;
     min-width: 370px;
-    background:rgb(251, 124, 255);
+    background:rgba(53, 26, 54, 0.233);
     opacity: 0.9;
     border-radius: 16px;
     padding: 2.5rem;
@@ -29,11 +39,10 @@ p {
 label{
     margin: 0.5% 0;
     display: block;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 input,textarea,select{
     margin: 10px,0,0,0;
-    width: 30%;
     min-width: 5em;
 }
 input,textarea{
@@ -43,8 +52,7 @@ input,textarea{
     width: 100%;
     padding: 8px 25px;
     font-size: 1.2rem;
-    margin-top: 10px;
-    margin-bottom: 10px
+    margin: 10px 0;
     
 } 
 
@@ -116,6 +124,6 @@ margin-bottom: 10px;
 
   @media only screen and (width < 420px){
     #survey-form{
-        min-width: 90%;
+        min-width: 95%;
     }
   }
