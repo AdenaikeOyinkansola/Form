@@ -17,7 +17,7 @@ p {
     font-size: 1.2em;
 }
 
-form{
+#survey-form{
     width: 50%;
     margin: 50px auto;
     min-width: 400px;
@@ -109,22 +109,9 @@ margin-bottom: 10px;
 
 
 
-  @media only screen and (max-width:765px){
-    #description{
-        font-size: 16px;
-        padding: .1em .5em;
-    }
-
+  @media only screen and (max-width: 400px){
     #survey-form{
-        font-size: 16px;
-        padding: 2em 2em 2em 2em;
+        min-width: none;
+        width: 95%;
     }
   }
-
-  @media screen and (min-width:500px) {
-    #survey-form{
-        font-size: 16px;
-        padding: 2em 2em 2em 2em;
-    }
-  }
-    
