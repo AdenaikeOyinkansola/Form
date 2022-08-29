@@ -90,7 +90,7 @@ function submitform(e) {
     div.append(pInline);
     div.append(pOpt);
     div.append(pCheckbox);
-    document.body.append(div);
+    document.querySelector('#printed-result').append(div);
 }
 
 form.addEventListener('submit', submitform);

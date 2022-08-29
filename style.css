@@ -107,7 +107,12 @@ margin-bottom: 10px;
     box-sizing: border-box;
 }
 
-
+#printed-result{
+    margin-bottom: 3em;
+    width: fit-content;
+    margin-inline: auto;
+    color: rgb(43, 12, 39);
+}
 
   @media only screen and (max-width: 400px){
     #survey-form{
