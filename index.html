@@ -44,8 +44,8 @@
                 <option value="Prefer Not To Say">Prefer Not To Say</option>
                 <option value="Other">Other</option>
             </select> 
-            <p> Would you reccomend this Website to a friend?</p>
-            <label><input type="radio" value="Definitely" class="inline" name="recommend" oninput="handleInline()">Definitely</label>
+            <p> Would you recommend this Website to a friend?</p>
+            <label><input type="radio" value="Definitely" class="inline" name="recommend">Definitely</label>
             <label><input type="radio" value="Maybe" class="inline" name="recommend" >Maybe</label>
             <label><input type="radio" value="Not sure" class="inline" name="recommend" >Not sure</label>
             <p>What is your favorite feature of freeCodeCamp?</p>
@@ -54,14 +54,14 @@
             <option value="Challenges">Challenges</option>
             <option value="Project">Project</option>
             </select>
-            <label>
-            <p>What would you like to see improved? (Check all that apply)</p>
-            <label><input type="checkbox"class="checkbox" oninput="handleCheckbox()"/>Front end Projects</label>
-            <label><input type="checkbox"class="checkbox" />Challenges</label>
-            <label><input type="checkbox"class="checkbox"/>Videos</label>
-            <label><input type="checkbox"class="checkbox"/>Additional courses</label>
 
-        </label> 
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <div class="improvements-box">
+                <label><input type="checkbox" class="improvements" value="Front end Projects" />Front end Projects</label>
+                <label><input type="checkbox" class="improvements" value="Challenges" />Challenges</label>
+                <label><input type="checkbox" class="improvements" value="Videos" />Videos</label>
+                <label><input type="checkbox" class="improvements" value="Additional courses" />Additional courses</label>
+            </div> 
         
     <input type="submit"id="submit" value="Submit"/>
         </form>

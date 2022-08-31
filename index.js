@@ -10,50 +10,50 @@ const emailText = document.querySelector('.email-text');
 const ageText = document.querySelector('.age-text');
 
 const drop = document.querySelector('.drop')
-const radio = document.querySelector('.inline')
+const recommend = document.querySelectorAll('input[name="recommend"]')
 const dropdown = document.querySelector('.opt')
-const checkbox = document.querySelector('.checkbox')
+const improvementBox = document.querySelector('.improvements-box')
+const improvementsCheckboxes = improvementBox.querySelectorAll('input[type="checkbox"]') // (.improvemnts);
+// [challenges, xyz, recommend]
 
 
+// function handleFirstName() {
+//     if (firstname.value.length < 6){
+//         console.log(`This is too short`)
+//     }
+// }
 
+// function handleEmail() {
+//     console.log({email: email.value })
+// }
 
-function handleFirstName() {
-    if (firstname.value.length < 6){
-        console.log(`This is too short`)
-    }
-}
+// function handleAge() {
+//     console.log({age: age.value })
+// }
 
-function handleEmail() {
-    console.log({email: email.value })
-}
+// function handleDrop(){
+//     console.log ({drop: drop.value})
+// }
 
-function handleAge() {
-    console.log({age: age.value })
-}
+// function handleInline() {
+//     console.log ({radio: radio.value})
+// }
 
-function handleDrop(){
-    console.log ({drop: drop.value})
-}
+// function handleOpt(){
+//     console.log ({dropdown: dropdown.value})
+// }
 
-function handleInline() {
-    console.log ({radio: radio.value})
-}
+// function handleCheckbox(){
+//     console.log({checkbox: checkbox.value})
+// }
 
-function handleOpt(){
-    console.log ({dropdown: dropdown.value})
-}
-
-function handleCheckbox(){
-    console.log({checkbox: checkbox.value})
-}
-
-handleFirstName();
-handleEmail();
-handleAge();
-handleDrop();
-handleInline();
-handleOpt();
-handleCheckbox();
+// handleFirstName();
+// handleEmail();
+// handleAge();
+// handleDrop();
+// handleInline();
+// handleOpt();
+// handleCheckbox();
 
 
 
@@ -68,19 +68,32 @@ function submitform(e) {
     let pFirstname = document.createElement('p');
     pFirstname.innerText = firstname.value;
     let pEmail = document.createElement('p');
-    pEmail.innerHTML = email.value;
+    pEmail.innerText = email.value;
     let pAge = document.createElement('p');
-    pAge.innerHTML = age.value;
+    pAge.innerText = age.value;
 
     
     let pDrop = document.createElement('p');
     pDrop.innerText = drop.value;
     let pInline = document.createElement('p');
-    pInline.innerText = radio.value;
+    let recommendedBy;
+    recommend.forEach(item => {
+        if (item.checked) {
+            recommendedBy = item.value
+        }
+    })
+    pInline.innerText = recommendedBy;
     let pOpt= document.createElement('p');
     pOpt.innerText = dropdown.value;
     let pCheckbox= document.createElement('p');
-    pCheckbox.innerText = checkbox.value;
+
+    let result = '';
+    improvementsCheckboxes.forEach(item => {
+        if (item.checked) {
+            result += `${item.value} ,`
+        }
+    })
+    pCheckbox.innerText = result;
     
 
     div.append(pFirstname);
